@@ -8,8 +8,9 @@ setup(
         'watchdog',
         'colorama',
     ],
-    entry_points='''
-        [console_scripts]
-        dlorg=organizer:main
-    ''',
+    entry_points={
+        'console_scripts': [
+            'dlorg=organizer:main',
+        ],
+    },
 )
