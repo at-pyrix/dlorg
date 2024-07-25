@@ -12,7 +12,7 @@
 pipx install dlorg
 ```
 
-### Using pip
+### Using pip (NOT recommended ❌)
 
 ```
 pip install dlorg
@@ -30,7 +30,7 @@ pip install dlorg
 2. Install the dependencies and the CLI tool:
 
     ```sh
-    pip install .
+    pipx install .
     ```
 
 ## Usage
