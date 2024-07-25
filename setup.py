@@ -2,13 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='download-organizer',
-    version='0.1',
+    version='1.0',
     description='A Python script to organize your downloads folder by file extensions and watch for new files.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='Your Name',
-    author_email='your.email@example.com',
-    url='https://github.com/yourusername/download-organizer',
+    author='pyrix',
+    url='https://github.com/at-pyrix/download-organizer',
     packages=find_packages(),
     install_requires=[
         'watchdog',
@@ -16,7 +15,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'dlorg=organizer:main',
+            'dlorg=organizer.organizer:main',
         ],
     },
     classifiers=[
