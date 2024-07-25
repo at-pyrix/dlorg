@@ -22,7 +22,7 @@ folder_names = {
     'Others': {'NONE'}
 }
 
-folder = Path("~/Downloads").expanduser()
+folder = str(Path("~/Downloads").expanduser())
 
 if folder.endswith('/'):
     folder = folder[:-1]

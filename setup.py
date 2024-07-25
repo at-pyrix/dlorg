@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='download-organizer',
-    version='1.3',
+    version='1.4',
     description='A Python script to organize your downloads folder by file extensions and watch for new files.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
