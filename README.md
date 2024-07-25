@@ -1,6 +1,7 @@
 # Download Organizer
 
-A Python script to organize your downloads folder by file extensions. It can also watch the folder for new files and automatically sort them.
+A Python script to organize your downloads folder by file extensions.
+<!--It can also watch the folder for new files and automatically sort them.-->
 
 ## Installation
 
@@ -37,15 +38,15 @@ To sort your downloads folder manually, run:
 ```sh
 dlorg
 ```
-
+<!--
 ### Watching Downloads Folder
 
 To watch the downloads folder and sort new files automatically, run:
 
 ```sh
 dlorg --watch
-```
-
+```-->
+<!--
 ## Running the script at startup (linux)
 
 To ensure the `--watch` script runs automatically at system startup, follow these steps:
@@ -72,13 +73,11 @@ To ensure the `--watch` script runs automatically at system startup, follow thes
 
    ```sh
    crontab -l
-   ```
+   ```-->
 
 ### Custom Downloads Folder
 
 If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `organizer.py` to the desired path.
-
-## Running the Script at System Startup (Linux)
 
 ## Folder Categories
 

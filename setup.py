@@ -10,7 +10,6 @@ setup(
     url='https://github.com/at-pyrix/download-organizer',
     packages=find_packages(),
     install_requires=[
-        'watchdog',
         'colorama',
     ],
 entry_points={
