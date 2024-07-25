@@ -1,6 +1,8 @@
-# Download Organizer
-
-A Python script to organize your downloads folder by file extensions.
+<h1 align=center>Download Organizer ⬇️</h1>
+<p align=center>
+<img src="https://raw.githubusercontent.com/at-pyrix/download-organizer/main/demo.gif"/>
+</p>
+<p align=center>A Python script to organize your downloads folder by file extensions.</p>
 <!--It can also watch the folder for new files and automatically sort them.-->
 
 ## Installation
@@ -36,7 +38,7 @@ pip install download-organizer
 <!--To sort your downloads folder manually, run:-->
 
 ```sh
-dlorg
+$ dlorg
 ```
 <!--
 ### Watching Downloads Folder
