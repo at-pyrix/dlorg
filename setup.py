@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='download-organizer',
-    version='1.0',
+    version='1.1',
     description='A Python script to organize your downloads folder by file extensions and watch for new files.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -13,11 +13,11 @@ setup(
         'watchdog',
         'colorama',
     ],
-    entry_points={
-        'console_scripts': [
-            'dlorg=organizer.organizer:main',
-        ],
-    },
+entry_points={
+    'console_scripts': [
+        'dlorg=organizer.organizer:main',
+    ],
+},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: End Users/Desktop',

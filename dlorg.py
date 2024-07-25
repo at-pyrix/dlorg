@@ -1,4 +1,4 @@
-import organizer
+from organizer.organizer import main
 import argparse
 
 def main():

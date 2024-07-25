@@ -4,6 +4,9 @@ A Python script to organize your downloads folder by file extensions. It can als
 
 ## Installation
 
+> [!WARNING]
+> ⚠️ If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
+
 ### Using PIP
 
 ```
@@ -24,8 +27,6 @@ pip install download-organizer
     ```sh
     pip install .
     ```
-
-    > ⚠️ If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
 
 ## Usage
 
