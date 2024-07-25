@@ -7,7 +7,7 @@
 
 ## Installation
 
-### Using [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) (recommended ✅)
+### Using [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) (recommended ✓)
 ```
 pipx install dlorg
 ```
