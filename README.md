@@ -12,12 +12,6 @@
 pipx install dlorg
 ```
 
-### Using pip (NOT recommended ❌)
-
-```
-pip install dlorg
-```
-
 ### Manual
 
 1. Clone the repository:
