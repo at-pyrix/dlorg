@@ -22,7 +22,7 @@ folder_names = {
     'Others': {'NONE'}
 }
 
-folder = str(Path("~/Downloads").expanduser())
+folder = Path("~/Downloads").expanduser()
 
 if folder.endswith('/'):
     folder = folder[:-1]
@@ -32,7 +32,7 @@ if not os.path.exists(folder):
 
 def find_category(file):
     extension = file.split(".")[-1] if not file.startswith('.') else "NONE"
-    category = "Others"  # Default to "Others"
+    category = "Others"
 
     for key, value in folder_names.items():
         if extension in value:

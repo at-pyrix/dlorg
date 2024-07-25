@@ -5,7 +5,7 @@ A Python script to organize your downloads folder by file extensions. It can als
 ## Installation
 
 > [!WARNING]
-> ⚠️ If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
+> If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
 
 ### Using PIP
 
@@ -46,7 +46,7 @@ To watch the downloads folder and sort new files automatically, run:
 dlorg --watch
 ```
 
-## Running the `--watch` Script at Startup
+## Running the script at startup (linux)
 
 To ensure the `--watch` script runs automatically at system startup, follow these steps:
 
