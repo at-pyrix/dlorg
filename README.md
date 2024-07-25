@@ -31,9 +31,9 @@ pip install download-organizer
 
 ## Usage
 
-### Manual Sorting
+<!-- ### Manual Sorting -->
 
-To sort your downloads folder manually, run:
+<!--To sort your downloads folder manually, run:-->
 
 ```sh
 dlorg

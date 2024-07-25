@@ -10,14 +10,24 @@ import platform
 init(autoreset=True)
 
 folder_names = {
-    "Audio": {'aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'flac', 'alac', 'aac', 'm4a'},
+    "Audio": {'8svx', 'aac', 'ac3', 'aiff', 'amb', 'au', 'avr', 'caf', 'cdda', 'cvs', 'cvsd', 'cvu', 'dts', 'dvms', 'fap', 'flac', 'fssd', 'gsrt', 'hcom', 'htk', 'ima', 'ircam', 'm4a', 'm4r', 'maud', 'mp2', 'mp3', 'nist', 'oga', 'ogg', 'opus', 'paf', 'prc', 'pvf', 'ra', 'sd2', 'sln', 'smp', 'snd', 'sndr', 'sndt', 'sou', 'sph', 'spx', 'tta', 'txw', 'vms', 'voc', 'vox', 'w64', 'wma', 'wv'},
+
     "Archive": {'7z', 'deb', 'pkg', 'rar', 'rpm', 'tar.gz', 'z', 'zip', 'tar.bz2', 'tar.xz', 'gz', 'bz2', 'xz'},
-    'Code': {'js', 'jsp', 'html', 'ipynb', 'py', 'java', 'css', 'c', 'cpp', 'cs', 'php', 'rb', 'rs', 'go', 'pl', 'r', 'swift', 'ts', 'sql', 'json', 'yaml', 'xml'},
-    'Documents': {'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'doc', 'docx', 'txt', 'tex', 'epub', 'odt', 'ods', 'odp', 'rtf', 'md', 'csv'},
-    'Images': {'bmp', 'gif', 'ico', 'jpeg', 'jpg', 'png', 'jfif', 'svg', 'tif', 'tiff', 'webp', 'heic', 'heif', 'raw', 'psd', 'ai', 'eps'},
-    'Programs': {'apk', 'bat', 'bin', 'jar', 'msi', 'exe', 'appimage', 'run', 'sh'},
-    'Videos': {'3gp', 'avi', 'flv', 'h264', 'mkv', 'mov', 'mp4', 'mpg', 'mpeg', 'wmv', 'webm', 'vob', 'm4v', 'divx', 'xvid'},
-    'Fonts': {'ttf', 'otf', 'woff', 'woff2', 'eot', 'pfa', 'pfb'},
+
+    'Code': {'c', 'class', 'cpp', 'cs', 'css', 'go', 'h', 'htaccess', 'html', 'java', 'js', 'json', 'kml', 'php', 'pl', 'py', 'rb', 'sql', 'swift', 'vb', 'yaml'},
+
+    'Documents': {'csv', 'djvu', 'doc', 'docx', 'odp', 'ods', 'odt', 'ott', 'pdf', 'ppt', 'rtf', 'txt', 'xls', 'xlsx'},
+
+    'Ebooks': {'azw3', 'epub', 'fb2', 'lrf', 'mobi', 'pdb', 'snb'},
+
+    'Images': {'bmp', 'cr2', 'cur', 'dds', 'dng', 'erf', 'exr', 'fts', 'gif', 'hdr', 'heic', 'heif', 'ico', 'jfif', 'jp2', 'jpe', 'jpeg', 'jpg', 'jps', 'mng', 'nef', 'nrw', 'orf', 'pam', 'pbm', 'pcd', 'pcx', 'pef', 'pes', 'pfm', 'pgm', 'picon', 'pict', 'png', 'pnm', 'ppm', 'psd', 'raf', 'ras', 'rw2', 'sfw', 'sgi', 'svg', 'tga', 'tiff', 'wbmp', 'webp', 'wpg', 'x3f', 'xbm', 'xcf', 'xpm', 'xwd'},
+
+    'Programs': {'apk', 'bin', 'jar', 'msi', 'exe', 'appimage', 'run'},
+
+    'Videos': {'3gp', 'asf', 'avi', 'f4v', 'flv', 'hevc', 'm2ts', 'm2v', 'm4v', 'mjpeg', 'mkv', 'mov', 'mp4', 'mpeg', 'mpg', 'mts', 'mxf', 'ogv', 'rm', 'swf', 'ts', 'vob', 'webm', 'wmv'},
+
+    'Fonts': {'cff', 'dfont', 'otf', 'pfb', 'ps', 'sfd', 'ttf', 'woff'},
+
     'Others': {'NONE'}
 }
 
