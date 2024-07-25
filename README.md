@@ -1,19 +1,21 @@
 <h1 align=center>Download Organizer ⬇️</h1>
 <p align=center>
-<img src="https://raw.githubusercontent.com/at-pyrix/download-organizer/main/demo.gif"/>
+<img src="https://raw.githubusercontent.com/at-pyrix/dlorg/main/demo.gif"/>
 </p>
 <p align=center>A Python script to organize your downloads folder by file extensions.</p>
 <!--It can also watch the folder for new files and automatically sort them.-->
 
 ## Installation
 
-> [!WARNING]
-> If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
+### Using [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) (recommended ✅)
+```
+pipx install dlorg
+```
 
-### Using PIP
+### Using pip
 
 ```
-pip install download-organizer
+pip install dlorg
 ```
 
 ### Manual
@@ -21,8 +23,8 @@ pip install download-organizer
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/at-pyrix/download-organizer.git
-    cd download-organizer
+    git clone https://github.com/at-pyrix/dlorg.git
+    cd dlorg
     ```
 
 2. Install the dependencies and the CLI tool:
@@ -33,69 +35,29 @@ pip install download-organizer
 
 ## Usage
 
-<!-- ### Manual Sorting -->
-
-<!--To sort your downloads folder manually, run:-->
-
 ```sh
 $ dlorg
 ```
-<!--
-### Watching Downloads Folder
-
-To watch the downloads folder and sort new files automatically, run:
-
-```sh
-dlorg --watch
-```-->
-<!--
-## Running the script at startup (linux)
-
-To ensure the `--watch` script runs automatically at system startup, follow these steps:
-
-1. **Open Crontab for Editing**
-
-   Open your crontab configuration file in edit mode:
-
-   ```sh
-   crontab -e
-   ```
-
-2. **Add an Entry to Run the Script at Startup**
-
-   Add the following line to the crontab file to run the `dlorg` command at startup:
-
-   ```sh
-   @reboot ~/.local/bin/dlorg --watch
-   ```
-
-3. **Verify Crontab Entry**
-
-   Ensure that the new entry is added to the crontab:
-
-   ```sh
-   crontab -l
-   ```-->
 
 ### Custom Downloads Folder
 
-If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `organizer.py` to the desired path.
+If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `dlorg.py` to the desired path.
 
 ## Folder Categories
 
 The script sorts files into the following categories:
 
-- **Audio**: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, flac, alac, aac, m4a
+- **Audio**: 8svx, aac, ac3, aiff, amb, au, avr, caf, cdda, cvs, cvsd, cvu, dts, dvms, fap, flac, fssd, gsrt, hcom, htk, ima, ircam, m4a, m4r, maud, mp2, mp3, nist, oga, ogg, opus, paf, prc, pvf, ra, sd2, sln, smp, snd, sndr, sndt, sou, sph, spx, tta, txw, vms, voc, vox, w64, wma, wv
 - **Archive**: 7z, deb, pkg, rar, rpm, tar.gz, z, zip, tar.bz2, tar.xz, gz, bz2, xz
-- **Code**: js, jsp, html, ipynb, py, java, css, c, cpp, cs, php, rb, rs, go, pl, r, swift, ts, sql, json, yaml, xml
-- **Documents**: ppt, pptx, pdf, xls, xlsx, doc, docx, txt, tex, epub, odt, ods, odp, rtf, md, csv
-- **Images**: bmp, gif, ico, jpeg, jpg, png, jfif, svg, tif, tiff, webp, heic, heif, raw, psd, ai, eps
-- **Programs**: apk, bat, bin, jar, msi, exe, appimage, run, sh
-- **Videos**: 3gp, avi, flv, h264, mkv, mov, mp4, mpg, mpeg, wmv, webm, vob, m4v, divx, xvid
-- **Fonts**: ttf, otf, woff, woff2, eot, pfa, pfb
+- **Code**: c, class, cpp, cs, css, go, h, htaccess, html, java, js, json, kml, php, pl, py, rb, sql, swift, vb, yaml
+- **Documents**: csv, djvu, doc, docx, odp, ods, odt, ott, pdf, ppt, rtf, txt, xls, xlsx
+- **Ebooks**: azw3, epub, fb2, lrf, mobi, pdb, snb
+- **Images**: bmp, cr2, cur, dds, dng, erf, exr, fts, gif, hdr, heic, heif, ico, jfif, jp2, jpe, jpeg, jpg, jps, mng, nef, nrw, orf, pam, pbm, pcd, pcx, pef, pes, pfm, pgm, picon, pict, png, pnm, ppm, psd, raf, ras, rw2, sfw, sgi, svg, tga, tiff, wbmp, webp, wpg, x3f, xbm, xcf, xpm, xwd
+- **Programs**: apk, bin, jar, msi, exe, appimage, run
+- **Videos**: 3gp, asf, avi, f4v, flv, hevc, m2ts, m2v, m4v, mjpeg, mkv, mov, mp4, mpeg, mpg, mts, mxf, ogv, rm, swf, ts, vob, webm, wmv
+- **Fonts**: cff, dfont, otf, pfb, ps, sfd, ttf, woff
 - **Others**: any other file types
-
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the `LICENSE` file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](./LICENSE) file for details.

@@ -1,22 +1,22 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='download-organizer',
-    version='1.6',
+    name='dlorg',
+    version='1.0',
     description='A Python script to organize your downloads folder by file extensions and watch for new files.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='pyrix',
-    url='https://github.com/at-pyrix/download-organizer',
-    packages=find_packages(),
+    url='https://github.com/at-pyrix/dlorg',
+    py_modules=['dlorg'],
     install_requires=[
-        'colorama',
+        'colorama>=0.4.4',
     ],
-entry_points={
-    'console_scripts': [
-        'dlorg=organizer.organizer:main',
-    ],
-},
+    entry_points={
+        'console_scripts': [
+            'dlorg=dlorg:main',
+        ],
+    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: End Users/Desktop',
