@@ -25,8 +25,7 @@ pip install download-organizer
     pip install .
     ```
 
-    > [!WARNING]
-    > If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
+    > ⚠️ If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
 
 ## Usage
 
