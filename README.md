@@ -4,18 +4,29 @@ A Python script to organize your downloads folder by file extensions. It can als
 
 ## Installation
 
+### Using PIP
+
+```
+pip install download-organizer
+```
+
+### Manual
+
 1. Clone the repository:
 
-```sh
-git clone https://github.com/at-pyrix/download-organizer.git
-cd download-organizer
-```
+    ```sh
+    git clone https://github.com/at-pyrix/download-organizer.git
+    cd download-organizer
+    ```
 
 2. Install the dependencies and the CLI tool:
 
-```sh
-pip install .
-```
+    ```sh
+    pip install .
+    ```
+
+    > [!WARNING]
+    > If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
 
 ## Usage
 
@@ -35,72 +46,39 @@ To watch the downloads folder and sort new files automatically, run:
 dlorg --watch
 ```
 
+## Running the `--watch` Script at Startup
+
+To ensure the `--watch` script runs automatically at system startup, follow these steps:
+
+1. **Open Crontab for Editing**
+
+   Open your crontab configuration file in edit mode:
+
+   ```sh
+   crontab -e
+   ```
+
+2. **Add an Entry to Run the Script at Startup**
+
+   Add the following line to the crontab file to run the `dlorg` command at startup:
+
+   ```sh
+   @reboot /usr/bin/dlorg --watch
+   ```
+
+3. **Verify Crontab Entry**
+
+   Ensure that the new entry is added to the crontab:
+
+   ```sh
+   crontab -l
+   ```
+
 ### Custom Downloads Folder
 
 If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `organizer.py` to the desired path.
 
 ## Running the Script at System Startup (Linux)
-
-To ensure the `--watch` script runs automatically at system startup, follow these steps:
-
-1. **Create a Systemd Service File**
-
-    Create a new service file for your script. Open a terminal and use a text editor to create a file in the `/etc/systemd/system/` directory:
-
-    ```sh
-    sudo nano /etc/systemd/system/download-organizer.service
-    ```
-
-    Add the following content to the file:
-
-    ```ini
-    [Unit]
-    Description=Download Organizer Service
-    After=network.target
-
-    [Service]
-    ExecStart=/usr/bin/dlorg --watch
-    Restart=always
-    User=yourusername
-    Environment="PATH=/usr/bin:/usr/local/bin"
-
-    [Install]
-    WantedBy=multi-user.target
-    ```
-
-    Replace `yourusername` with your actual username.
-
-2. **Reload Systemd Daemon**
-
-    After creating the service file, reload the systemd daemon to recognize the new service:
-
-    ```sh
-    sudo systemctl daemon-reload
-    ```
-
-3. **Enable the Service**
-
-    Enable the service so that it starts automatically on boot:
-
-    ```sh
-    sudo systemctl enable download-organizer.service
-    ```
-
-4. **Start the Service**
-
-    Start the service immediately without rebooting:
-
-    ```sh
-    sudo systemctl start download-organizer.service
-    ```
-
-5. **Check the Status**
-
-    Verify that the service is running:
-
-    ```sh
-    sudo systemctl status download-organizer.service
-    ```
 
 ## Folder Categories
 
