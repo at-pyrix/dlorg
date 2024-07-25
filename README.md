@@ -62,7 +62,7 @@ To ensure the `--watch` script runs automatically at system startup, follow thes
    Add the following line to the crontab file to run the `dlorg` command at startup:
 
    ```sh
-   @reboot /usr/bin/dlorg --watch
+   @reboot ~/.local/bin/dlorg --watch
    ```
 
 3. **Verify Crontab Entry**
