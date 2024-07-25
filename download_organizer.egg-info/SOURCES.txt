@@ -1,9 +1,0 @@
-README.md
-organizer.py
-setup.py
-download_organizer.egg-info/PKG-INFO
-download_organizer.egg-info/SOURCES.txt
-download_organizer.egg-info/dependency_links.txt
-download_organizer.egg-info/entry_points.txt
-download_organizer.egg-info/requires.txt
-download_organizer.egg-info/top_level.txt
