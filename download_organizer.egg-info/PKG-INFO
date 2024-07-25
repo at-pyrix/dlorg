@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: download-organizer
+Version: 0.1
+Requires-Dist: watchdog
+Requires-Dist: colorama
