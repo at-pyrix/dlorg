@@ -15,12 +15,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Specify the Python version
+          python-version: '3.x'  # Specify the Python version you need
 
       - name: Install Poetry
-        uses: python-poetry/poetry-action@v2
-        with:
-          poetry-version: '1.x'  # Specify the Poetry version
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
 
       - name: Install dependencies
         run: |
