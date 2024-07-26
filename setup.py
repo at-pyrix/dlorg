@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name='dlorg',
-    version='2.0',
-    description='A Python script to organize your downloads folder by file extensions and watch for new files.',
+    version='2.1',
+    description='A Python script to organize your downloads folder by file extensions and mimetypes.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='pyrix',
@@ -11,6 +11,7 @@ setup(
     py_modules=['dlorg'],
     install_requires=[
         'colorama>=0.4.4',
+        'python-magic>=0.4.27'
     ],
     entry_points={
         'console_scripts': [
