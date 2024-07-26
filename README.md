@@ -2,7 +2,7 @@
 <p align=center>
 <img src="https://raw.githubusercontent.com/at-pyrix/dlorg/main/demo.gif"/>
 </p>
-<p align=center>A Python script to organize your downloads folder by file extensions and mimetypes. The script also assigns an icon to each of the folders.</p>
+<p align=center>A Python script to organize your downloads folder by file extensions and mimetypes.</p>
 
 ## Installation
 
