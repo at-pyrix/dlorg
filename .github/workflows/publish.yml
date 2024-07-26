@@ -3,7 +3,7 @@ name: Publish Package
 on:
   push:
     branches:
-      - main  # or the branch you use for releases
+      - main
 
 jobs:
   build-and-publish:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Specify the Python version you need
+          python-version: '3.x'
 
       - name: Install Poetry
         run: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Publish package
         run: |
-           poetry config http-basic.pypi __token__ ${{ secrets.PYPI_TOKEN }}
+          poetry config http-basic.pypi __token__ ${{ secrets.PYPI_TOKEN }}
           poetry publish --build
         env:
           POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
