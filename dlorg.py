@@ -68,10 +68,6 @@ def find_category(file):
                 elif 'x-font' in mime_type:
                     category = 'Fonts'
 
-    # Default category for uncategorized files
-    if category is None:
-        category = 'Miscellaneous'
-
     return category
 
 def create_directory_file(category_path, category):
@@ -102,7 +98,7 @@ def sort_files():
             except shutil.Error as e:
                 print(bg.RED + 'ERR' + bg.RESET + ' ' + str(e))
         else:
-            print(f"{fc.YELLOW}Left {fc.RESET}{item.name}{fc.LIGHTBLACK_EX} in Downloads{fc.RESET}")
+            print(f"{fc.YELLOW}Left {fc.RESET}{item.name}{fc.LIGHTBLACK_EX} {fc.YELLOW}in Downloads{fc.RESET}")
 
     if not sort_flag:
         print("There is nothing to do.")
