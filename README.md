@@ -43,6 +43,37 @@ If you want to manually edit the file category. You can edit the `config.json` f
 $ dlorg --config
 ```
 
+After opening the file with your favourite text editor, modify the following json according to your needs:
+
+```json
+{
+    "folder_names": {
+        "Audio": ["8svx", "aac", "ac3", "aiff", "amb", "au", "avr", "caf", "cdda", "cvs", "cvsd", "cvu", "dts", "dvms", "fap", "flac", "fssd", "gsrt", "hcom", "htk", "ima", "ircam", "m4a", "m4r", "maud", "mp2", "mp3", "nist", "oga", "ogg", "opus", "paf", "prc", "pvf", "ra", "sd2", "sln", "smp", "snd", "sndr","sndt", "sou", "sph", "spx", "tta", "txw", "vms", "voc", "vox", "w64", "wma", "wv"],
+        "Archive": ["7z", "deb", "pkg", "rar", "rpm", "tar.gz", "z", "zip", "tar.bz2", "tar.xz", "gz", "bz2", "xz"],
+        "Code": ["c", "class", "cpp", "cs", "css", "go", "h", "htaccess", "html", "java", "js", "json", "kml", "php", "pl", "py", "rb", "sql", "swift", "vb", "yaml"],
+        "Documents": ["csv", "djvu", "doc", "docx", "odp", "ods", "odt", "ott", "pdf", "ppt", "rtf", "txt", "xls", "xlsx", "md"],
+        "Ebooks": ["azw3", "epub", "fb2", "lrf", "mobi", "pdb", "snb"],
+        "Images": ["bmp", "cr2", "cur", "dds", "dng", "erf", "exr", "fts", "gif", "hdr", "heic", "heif", "ico", "jfif", "jp2", "jpe", "jpeg", "jpg", "jps", "mng", "nef", "nrw", "orf", "pam", "pbm", "pcd", "pcx", "pef", "pes", "pfm", "pgm", "picon","pict", "png", "pnm", "ppm", "psd", "raf", "ras", "rw2", "sfw", "sgi", "svg", "tga", "tiff", "wbmp", "webp", "wpg", "x3f", "xbm", "xcf", "xpm", "xwd"],
+        "Programs": ["apk", "bin", "jar", "msi", "exe", "appimage", "run", "sh", "fish"],
+        "Videos": ["3gp", "asf", "avi", "f4v", "flv", "hevc", "m2ts", "m2v", "m4v", "mjpeg", "mkv", "mov", "mp4", "mpeg", "mpg", "mts", "mxf", "ogv", "rm", "swf", "ts", "vob", "webm", "wmv"],
+        "Fonts": ["cff", "dfont", "otf", "pfb", "ps", "sfd", "ttf", "woff"],
+        "Torrent": ["torrent"]
+    },
+    "folder_icons": {
+        "Audio": "folder-music",
+        "Archive": "default-folder-tar",
+        "Code": "folder-development",
+        "Documents": "folder-documents",
+        "Ebooks": "folder-book",
+        "Images": "folder-images",
+        "Programs": "folder-script",
+        "Videos": "folder-videos",
+        "Fonts": "folder-activities",
+        "Torrent": "repository"
+    }
+}
+```
+
 ## Folder Categories
 
 The script sorts files into the following categories by default:
