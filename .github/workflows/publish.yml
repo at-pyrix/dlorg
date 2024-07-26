@@ -1,0 +1,38 @@
+name: Publish Package
+
+on:
+  push:
+    branches:
+      - main  # or the branch you use for releases
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # Specify the Python version
+
+      - name: Install Poetry
+        uses: python-poetry/poetry-action@v2
+        with:
+          poetry-version: '1.x'  # Specify the Poetry version
+
+      - name: Install dependencies
+        run: |
+          poetry install
+
+      - name: Build package
+        run: |
+          poetry build
+
+      - name: Publish package
+        run: |
+          poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+          poetry publish --build --username __token__ --password ${{ secrets.PYPI_TOKEN }}
+        env:
+          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}

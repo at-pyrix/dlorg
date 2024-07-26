@@ -36,9 +36,16 @@ $ dlorg
 
 If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `dlorg.py` to the desired path.
 
+### Custom category configuration
+
+If you want to manually edit the file category. You can edit the `config.json` file, whose location can be obtained by the command:
+```
+$ dlorg --config
+```
+
 ## Folder Categories
 
-The script sorts files into the following categories:
+The script sorts files into the following categories by default:
 
 - **Audio**: 8svx, aac, ac3, aiff, amb, au, avr, caf, cdda, cvs, cvsd, cvu, dts, dvms, fap, flac, fssd, gsrt, hcom, htk, ima, ircam, m4a, m4r, maud, mp2, mp3, nist, oga, ogg, opus, paf, prc, pvf, ra, sd2, sln, smp, snd, sndr, sndt, sou, sph, spx, tta, txw, vms, voc, vox, w64, wma, wv
 - **Archive**: 7z, deb, pkg, rar, rpm, tar.gz, z, zip, tar.bz2, tar.xz, gz, bz2, xz
