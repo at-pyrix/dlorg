@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='dlorg',
-    version='2.1',
+    version='2.2',
     description='A Python script to organize your downloads folder by file extensions and mimetypes.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

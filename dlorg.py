@@ -25,7 +25,7 @@ def load_config():
             "Images": ["bmp", "cr2", "cur", "dds", "dng", "erf", "exr", "fts", "gif", "hdr", "heic", "heif", "ico", "jfif", "jp2", "jpe", "jpeg", "jpg", "jps", "mng", "nef", "nrw", "orf", "pam", "pbm", "pcd", "pcx", "pef", "pes", "pfm", "pgm", "picon", "pict", "png", "pnm", "ppm", "psd", "raf", "ras", "rw2", "sfw", "sgi", "svg", "tga", "tiff", "wbmp", "webp", "wpg", "x3f", "xbm", "xcf", "xpm", "xwd"],
             "Programs": ["apk", "bin", "jar", "msi", "exe", "appimage", "run", "sh", "fish"],
             "Videos": ["3gp", "asf", "avi", "f4v", "flv", "hevc", "m2ts", "m2v", "m4v", "mjpeg", "mkv", "mov", "mp4", "mpeg", "mpg", "mts", "mxf", "ogv", "rm", "swf", "ts", "vob", "webm", "wmv"],
-            "Fonts": ["cff", "dfont", "otf", "pfb", "ps", "sfd", "ttf", "woff"]
+            "Fonts": ["cff", "dfont", "otf", "pfb", "ps", "sfd", "ttf", "woff"],
             "Torrent": ["torrent"]
         },
         "folder_icons": {
