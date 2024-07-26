@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dlorg"
-version = "2.2"
+version = "2.2.1"
 description = "A Python script to organize your downloads folder by file extensions and mimetypes."
 authors = ["pyrix <probablynotyasho@gmail.com>"]
 license = "GPL-3.0"
