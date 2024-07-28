@@ -29,7 +29,7 @@ pipx install dlorg
 ## Usage
 
 ```sh
-$ dlorg
+$ dlorg [-h] [--config]
 ```
 
 ### Custom Downloads Folder
