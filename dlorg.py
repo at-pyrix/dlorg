@@ -143,7 +143,7 @@ def main():
 
     if args.config:
         config_file = get_config_file()
-        print(f"Configuration file location: {config_file}")
+        print(config_file)
         return
 
     sort_files()
